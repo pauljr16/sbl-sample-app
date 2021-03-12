@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" class="vh-100">
+<head>
+  <title>SBL | Admin</title>
+
+  <!-- Required meta tags -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS Version 4.5.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="icon" href="image/lingayen-logo.png">
+  <!-- Font Awesome 4.7.0 -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom CSS --> 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/admin-user.css">
+</head>
+<body>
+  <img src="image/god-we-trust.png" width="100%" height="35%">
+
+	<section>
+    <div class="rt-container" style="background-color: #90050c;">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+            <!-- Start Navigation HTML -->
+    		<div class="containers">
+  <div class="logo" ><img src="image/lingayenlogo.png" class="one" ></div>
+  <p> </p>
+  <a href="admin-home.html" class="item">HOME</a>
+  <a href="admin-user.html" class="item">RESOLUTION</a>
+  <a href="admin-userordinance.html" class="item">ORDINANCE</a>
+  <a href="admin-userbusinessorder.html" class="item">ORDER OF BUSINESS</a>
+  <a href="admin-about.html" class="item">ABOUT US</a>
+  <a href="" class="item">GET IN TOUCH</a>
+</div>
+<!-- End Navigation HTM -->
+                  
+           
+    		</div>
+		</div>
+    </div>
+</section>
+  <!-- Main Section 
+  <div class="container-fluid p-0 h-100 d-flex flex-column">
+  
+    <!-- Navigation Bar 
+    <nav class="navbar navbar-expand navbar-dark sticky-top py-2 py-lg-1" style="background-color: #90050c;">
+      <!-- Brand/logo 
+      <a href="admin-user.html" class="navbar-brand d-inline-flex align-items-center mr-auto p-0">
+        <img src="image/lingayen-logo.png" class="mr-2" width="45px" height="45px" alt="Lingayen-logo">
+        <img src="image/logo.png" class="d-none d-md-block mr-2"  width="49px" height="49px" alt="Mayor-logo">
+        <span class="d-none d-sm-block">Sangguniang Bayan of Lingayen</span>
+      </a>
+
+      <!-- Search Form 
+      <form id="search-input-form" class="form-inline" autocomplete="off">
+        <input id="search-input" class="form-control" onkeyup="searchFilesAndFolders()" type="text" placeholder="Search" aria-label="Search">
+      </form>
+    </nav>-->
+
+    <!-- Main Content -->
+    <div class="flex-grow-1 main-section" >
+      <h6 style="margin-bottom: 10px;margin-left: 10px;"><a class="fa fa-sign-out" onclick="logOutUser()" style="cursor: pointer;color: black;">Logout</a></h6>
+      <div class="container-fluid h-100"  >
+        <div class="row h-100">
+          <!-- Left Side -->
+          <div class="col-12 " style="width: 100%;"  >
+            <div class="px-2 rounded h-100 left-side-tabs"  >
+              <div class="container-fluid p-0 d-flex flex-column h-100"  >
+                <!-- Files, Records, Users Tabs Links -->
+                <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+                  <div class="uk-width-1-1@m uk-first-column">               
+                  <h1 class="uk-margin-remove-vertical uk-text-center" >Phone Numbers<hr></h1>
+                  <div class="uk-card uk-card-default uk-card-body uk-margin-remove-first-child uk-margin-remove-vertical" id="page#0-0-0-1">        
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>Mayor’s Office</h4>
+                    <p style="text-align: justify;" >(075) 632-4337</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>Vice Mayor’s Office</h4>
+                    <p style="text-align: justify;" >(075) 632-7521</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>PDRRMC</h4>
+                    <p style="text-align: justify;" >(075) 542-3347</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>Community Hospital</h4>
+                    <p style="text-align: justify;" >(075) 542-2295</p><hr>
+                  </div>                  
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>RHU 1</h4>
+                    <p style="text-align: justify;" >(075) 632-6414</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>RHU II</h4>
+                    <p style="text-align: justify;" >(075) 632-5373</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>MPDC</h4>
+                    <p style="text-align: justify;" >(075) 632-3672</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>PESO</h4>
+                    <p style="text-align: justify;" >(075) 542-6211</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>Budget Office</h4>
+                    <p style="text-align: justify;" >(075) 632-3966</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>MSWD</h4>
+                    <p style="text-align: justify;" >(075) 633-9575</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>LDRRMO</h4>
+                    <p style="text-align: justify;" >(075) 633-5702</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>DILG</h4>
+                    <p style="text-align: justify;" >(075) 542-2396</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>BFP</h4>
+                    <p style="text-align: justify;" >(075) 542-7080</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>DPWH LINGAYEN</h4>
+                    <p style="text-align: justify;" >(075) 542-4920</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>LANDBANK LINGAYEN</h4>
+                    <p style="text-align: justify;" >(075) 542-6931</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>VETERANS BANK</h4>
+                    <p style="text-align: justify;" >(075) 662-1010</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>Assessor’s Office</h4>
+                    <p style="text-align: justify;" >(075) 542-3527</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>CSC Lingayen</h4>
+                    <p style="text-align: justify;" >(075) 529-9394</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>COMELEC Lingayen</h4>
+                    <p style="text-align: justify;" >(075) 542-6326</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>BIR Lingayen</h4>
+                    <p style="text-align: justify;" >(075) 542-5269</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>Agriculture Office</h4>
+                    <p style="text-align: justify;" >(075) 632-5373</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>CENPELCO Lingayen</h4>
+                    <p style="text-align: justify;" >(075) 529-5779</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>Prime Water</h4>
+                    <p style="text-align: justify;" >(075) 653-0866</p><hr>
+                  </div>
+                  <div class="el-content uk-panel uk-text-lead uk-margin-top" >
+                    <h4>PAGASA Dagupan</h4>
+                    <p style="text-align: justify;" >(075) 515-4046</p><hr>
+                  </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer style="text-align: center;" style="background-color: gray;width: 100%;">
+    <img src="image/lingayen-logo.png" style="width:80px; margin: 10px;" >
+    <p style="padding-bottom: 10px;">Copyright © 2021. Municipality of Lingayen, Province of Pangasinan. All rights reserved.</p>
+  </footer>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+
+  <!-- INITIALIZE FIREBASE SCRIPTS -->
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyDHsJWvMh4SAhqUJQG5NdVg9QFkH2o-loo",
+    authDomain: "lingayen-ad13c.firebaseapp.com",
+    databaseURL: "https://lingayen-ad13c-default-rtdb.firebaseio.com",
+    projectId: "lingayen-ad13c",
+    storageBucket: "lingayen-ad13c.appspot.com",
+    messagingSenderId: "1040513665433",
+    appId: "1:1040513665433:web:71b990dbd48a5f6f76ab08",
+    measurementId: "G-2N1B61B0TL"
+  };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // initialize firebase features
+    const authentication = firebase.auth();
+    const realtimeDatabase = firebase.database();
+    const cloudFirestore = firebase.firestore();
+    const storage = firebase.storage();
+  </script>
+
+  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <!-- My Custom Javascript Code -->
+  <script src="js/admin-other-script.js"></script>
+  <script src="js/admin-files-tab-script.js"></script>
+  <script src="js/admin-records-tab-script.js"></script>
+  <script src="js/admin-users-tab-script.js"></script>
+</body>
+</html>

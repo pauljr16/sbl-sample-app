@@ -1,0 +1,453 @@
+html {
+  font-size: 16px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-section {
+  background-color: #d2d2d2;
+  padding: 15px 0px;
+}
+
+
+/* Files, Records, and Users Tab Header */
+.nav-tabs {
+  border: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 5px solid #5D4C46 !important;
+}
+.nav-tabs .nav-link {
+  border: none;
+}
+
+
+/* File Categories Container */
+#file-categories-container, #record-categories-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow: auto;
+  height: calc(100vh - 236px);
+  margin-bottom: .75rem;
+}
+#file-categories-container::-webkit-scrollbar, #record-categories-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* File and Record Category Button */
+.file-category-button, .record-category-button {
+  width: 95%;
+  height: 35px;
+  text-align: left;
+  border: .5px solid black;
+  line-height: 22px;
+  margin-top: .25rem;
+}
+.file-category-button:hover, .record-category-button:hover {
+  border: .5px solid black;
+}
+.file-category-button:focus, .file-category-button:active, .record-category-button:focus, .record-category-button:active {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  outline: 0px;
+  border: .5px solid black;
+}
+
+
+/* Files Content */
+#files-tab-content-container {
+  max-height: calc(100vh - 167px);
+}
+
+
+/* Records Content */
+#records-tab-content-container {
+  max-height: calc(100vh - 157px);
+}
+
+
+/* Users Content */
+#users-tab-content-container {
+  max-height: calc(100vh - 103px);
+}
+
+
+/* Growing Spinner */
+.spinner-grow {
+  height: 3rem;
+  width: 3rem;
+}
+
+
+/* Folders Right Side */
+.document-list {
+  overflow: hidden;
+  border-bottom: 0 !important;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.document-list i {
+	font-size: 4rem;
+	padding: 21px;
+}
+.file-and-folder-title {
+  font-size: 0.85rem;
+  height: 4.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+
+
+/* Hide Left Side Tabs Scrollbar */
+#files-tab-content-container::-webkit-scrollbar, #records-tab-content-container::-webkit-scrollbar, #users-tab-content-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Records */
+.record-max-lines {
+  overflow: hidden;
+	text-overflow: ellipsis;
+  display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+
+
+/* User List */
+.card-img-top {
+  height: 160px; 
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+
+/* BreadCrumb */
+.breadcrumb-link {
+  color: #007bff; 
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+
+/* User select none */
+.us-none {
+  user-select: none;
+}
+
+
+/* Three Dots Button */
+.three-dots-link {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.15rem;
+  border-radius: 25px;
+}
+
+
+/* Tab content */
+.tab-content {
+  background-image: url(../image/lingayen-logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90%;
+}
+
+
+/* tab pane */
+.tab-pane {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Left bg */
+.left-bg {
+  background-image: url(../image/lingayen-logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+}
+
+.left-side-tabs {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  .left-side-tabs, .right-side-tabs {
+    min-height: 85vh;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* This is a custom col-lg-4 */
+  .custom-col-lg-4 {
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+
+  .custom-pr-lg-0 {
+    padding-right: 0;
+  }
+
+  .custom-col-lg-8 {
+    -ms-flex: 0 0 67%;
+    flex: 0 0 67%;
+    max-width: 67%;
+  }
+
+  body {
+    height: 100vh;
+  }
+}
+
+/* Custom Width Breakpoints */
+@media (min-width: 1100px) {
+  /* This is a custom col-lg-4 */
+  .custom-col-lg-4 {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+    max-width: 32%;
+  }
+
+  .custom-col-lg-8 {
+    -ms-flex: 0 0 68%;
+    flex: 0 0 68%;
+    max-width: 68%;
+  }
+
+  .tab-content {
+    background-size: 80%;
+  }
+}
+
+@media (min-width: 1150px) {
+  /* This is a custom col-lg-4 */
+  .custom-col-lg-4 {
+    -ms-flex: 0 0 31%;
+    flex: 0 0 31%;
+    max-width: 31%;
+  }
+
+  .custom-col-lg-8 {
+    -ms-flex: 0 0 69%;
+    flex: 0 0 69%;
+    max-width: 69%;
+  }
+
+  .tab-content {
+    background-size: 75%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* This is a custom col-lg-4 */
+  .custom-col-xl-3 {
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  .custom-col-xl-9 {
+    -ms-flex: 0 0 70%;
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+
+  .tab-content {
+    background-size: 70%;
+  }
+}
+
+/* Custom Width Breakpoints */
+@media (min-width: 1250px) {
+  /* This is a custom col-lg-4 */
+  .custom-col-xl-3 {
+    -ms-flex: 0 0 29%;
+    flex: 0 0 29%;
+    max-width: 29%;
+  }
+
+  .custom-col-xl-9 {
+    -ms-flex: 0 0 71%;
+    flex: 0 0 71%;
+    max-width: 71%;
+  }
+
+  .custom-folder-col-xl {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 1300px) {
+  /* This is a custom col-lg-4 */
+  .custom-col-xl-3 {
+    -ms-flex: 0 0 28%;
+    flex: 0 0 28%;
+    max-width: 28%;
+  }
+
+  .custom-col-xl-9 {
+    -ms-flex: 0 0 72%;
+    flex: 0 0 72%;
+    max-width: 72%;
+  }
+
+  .tab-content {
+    background-size: 65%;
+  }
+}
+
+@media (min-width: 1350px) {
+  /* This is a custom col-lg-4 */
+  .custom-col-xl-3 {
+    -ms-flex: 0 0 27%;
+    flex: 0 0 27%;
+    max-width: 27%;
+  }
+
+  .custom-col-xl-9 {
+    -ms-flex: 0 0 73%;
+    flex: 0 0 73%;
+    max-width: 73%;
+  }
+
+  .tab-content {
+    background-size: 60%;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* This is a custom col-lg-4 */
+  .custom-col-xl-3 {
+    -ms-flex: 0 0 26%;
+    flex: 0 0 26%;
+    max-width: 26%;
+  }
+
+  .custom-col-xl-9 {
+    -ms-flex: 0 0 74%;
+    flex: 0 0 74%;
+    max-width: 74%;
+  }
+
+  .custom-folder-col-xl {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .col-xxl-2 {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .tab-content {
+    background-size: 57%;
+  }
+}
+
+@media (min-width: 1450px) {
+  /* This is a custom col-lg-4 */
+  .custom-col-xl-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .custom-col-xl-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .custom-folder-col-xl {
+    -ms-flex: 0 0 16.6%;
+    flex: 0 0 16.6%;
+    max-width: 16.6%;
+  }
+
+  .tab-content {
+    background-size: 53%;
+  }
+}
+
+@media (min-width: 1500px) {
+  /* This is a custom col-lg-4 */
+  .custom-col-xl-3 {
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
+    max-width: 24%;
+  }
+
+  .custom-col-xl-9 {
+    -ms-flex: 0 0 76%;
+    flex: 0 0 76%;
+    max-width: 76%;
+  }
+
+  .custom-folder-col-xl {
+    -ms-flex: 0 0 16.6%;
+    flex: 0 0 16.6%;
+    max-width: 16.6%;
+  }
+
+  .tab-content {
+    background-size: 53%;
+  }
+}
+
+@media (min-width: 1550px) {
+  /* This is a custom col-lg-4 */
+  .custom-col-xl-3 {
+    -ms-flex: 0 0 23%;
+    flex: 0 0 23%;
+    max-width: 23%;
+  }
+
+  .custom-col-xl-9 {
+    -ms-flex: 0 0 77%;
+    flex: 0 0 77%;
+    max-width: 77%;
+  }
+
+  .custom-folder-col-xl {
+    -ms-flex: 0 0 14.2%;
+    flex: 0 0 14.2%;
+    max-width: 14.2%;
+  }
+
+  .tab-content {
+    background-size: 50%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .col-xxl-2 {
+    -ms-flex: 0 0 16.66666%;
+    flex: 0 0 16.66666%;
+    max-width: 16.66666%;
+  }
+
+  .tab-content {
+    background-size: 48%;
+  }
+}
