@@ -5,6 +5,7 @@ body {
 .wrapper {
   min-width: 100%;
   min-height: 100vh;
+  background-image: url(../image/login-signup-bg.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100% 100%;
