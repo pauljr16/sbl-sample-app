@@ -49,7 +49,7 @@ function generateFilesTabLeftSideHTML() {
         type="text" placeholder="Search Folder">
     </form>
 
-    <h5 class="my-2" style="color:#fff;"><strong>BUSINESS ORDER</strong></h5>
+    <h5 class="my-2" style="color:#fff;"><strong>APPROPRIATION ORDINANCE</strong></h5>
     
     <!-- File Categories Container -->
     <div id="file-categories-container" class="overflow-auto">
